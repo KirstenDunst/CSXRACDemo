@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		099297D1A59CE83DEFB439D7 /* libPods-CSXRACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
 		DBEA0DFC22647E4100EAEF8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DFB22647E4100EAEF8F /* ViewController.m */; };
 		DBEA0DFF22647E4100EAEF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA0DFD22647E4100EAEF8F /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 		DBEA0E0722647E4200EAEF8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0E0622647E4200EAEF8F /* main.m */; };
 		DBEA0E1122647E4200EAEF8F /* CSXRACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0E1022647E4200EAEF8F /* CSXRACDemoTests.m */; };
 		DBEA0E1C22647E4200EAEF8F /* CSXRACDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0E1B22647E4200EAEF8F /* CSXRACDemoUITests.m */; };
+		DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0E2B2264808F00EAEF8F /* RACModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3A87719ED21B3B81C6E5BB20 /* Pods-CSXRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSXRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSXRACDemo/Pods-CSXRACDemo.release.xcconfig"; sourceTree = "<group>"; };
+		B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSXRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEA0DF422647E4100EAEF8F /* CSXRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSXRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEA0DF722647E4100EAEF8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBEA0DF822647E4100EAEF8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +55,9 @@
 		DBEA0E1722647E4200EAEF8F /* CSXRACDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CSXRACDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEA0E1B22647E4200EAEF8F /* CSXRACDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSXRACDemoUITests.m; sourceTree = "<group>"; };
 		DBEA0E1D22647E4200EAEF8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBEA0E2A2264808F00EAEF8F /* RACModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RACModel.h; sourceTree = "<group>"; };
+		DBEA0E2B2264808F00EAEF8F /* RACModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACModel.m; sourceTree = "<group>"; };
+		E5658A960842A2A2D8D58173 /* Pods-CSXRACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSXRACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CSXRACDemo/Pods-CSXRACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				099297D1A59CE83DEFB439D7 /* libPods-CSXRACDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23B4805BC41BE3F1DCB02D03 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E5658A960842A2A2D8D58173 /* Pods-CSXRACDemo.debug.xcconfig */,
+				3A87719ED21B3B81C6E5BB20 /* Pods-CSXRACDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		75867ECB780C90CEA4681806 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBEA0DEB22647E4100EAEF8F = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				DBEA0E0F22647E4200EAEF8F /* CSXRACDemoTests */,
 				DBEA0E1A22647E4200EAEF8F /* CSXRACDemoUITests */,
 				DBEA0DF522647E4100EAEF8F /* Products */,
+				23B4805BC41BE3F1DCB02D03 /* Pods */,
+				75867ECB780C90CEA4681806 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +132,7 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
+				DBEA0E292264807900EAEF8F /* Model */,
 				DBEA0DFD22647E4100EAEF8F /* Main.storyboard */,
 				DBEA0E0022647E4200EAEF8F /* Assets.xcassets */,
 				DBEA0E0222647E4200EAEF8F /* LaunchScreen.storyboard */,
@@ -132,6 +160,15 @@
 			path = CSXRACDemoUITests;
 			sourceTree = "<group>";
 		};
+		DBEA0E292264807900EAEF8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBEA0E2A2264808F00EAEF8F /* RACModel.h */,
+				DBEA0E2B2264808F00EAEF8F /* RACModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBEA0E2022647E4200EAEF8F /* Build configuration list for PBXNativeTarget "CSXRACDemo" */;
 			buildPhases = (
+				0A250AE99FBBF2B89FF634BD /* [CP] Check Pods Manifest.lock */,
 				DBEA0DF022647E4100EAEF8F /* Sources */,
 				DBEA0DF122647E4100EAEF8F /* Frameworks */,
 				DBEA0DF222647E4100EAEF8F /* Resources */,
@@ -257,6 +295,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A250AE99FBBF2B89FF634BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CSXRACDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBEA0DF022647E4100EAEF8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -265,6 +324,7 @@
 				DBEA0DFC22647E4100EAEF8F /* ViewController.m in Sources */,
 				DBEA0E0722647E4200EAEF8F /* main.m in Sources */,
 				DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */,
+				DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +493,7 @@
 		};
 		DBEA0E2122647E4200EAEF8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5658A960842A2A2D8D58173 /* Pods-CSXRACDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +511,7 @@
 		};
 		DBEA0E2222647E4200EAEF8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A87719ED21B3B81C6E5BB20 /* Pods-CSXRACDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
