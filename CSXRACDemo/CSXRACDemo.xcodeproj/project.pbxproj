@@ -12,6 +12,8 @@
 		DB6D417F2276949300E5F293 /* MulticastConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D417E2276949300E5F293 /* MulticastConnectionViewController.m */; };
 		DB6D41832276C81800E5F293 /* CommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41822276C81800E5F293 /* CommandViewController.m */; };
 		DB6D41872276DEC800E5F293 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41862276DEC800E5F293 /* CenterViewController.m */; };
+		DB6D418B2276E48F00E5F293 /* TupleSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */; };
+		DB6D418E2276F1DC00E5F293 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418D2276F1DC00E5F293 /* Person.m */; };
 		DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F4226709A800AFCE5E /* BaseView.m */; };
 		DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
@@ -53,6 +55,10 @@
 		DB6D41822276C81800E5F293 /* CommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandViewController.m; sourceTree = "<group>"; };
 		DB6D41852276DEC800E5F293 /* CenterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterViewController.h; sourceTree = "<group>"; };
 		DB6D41862276DEC800E5F293 /* CenterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterViewController.m; sourceTree = "<group>"; };
+		DB6D41892276E48F00E5F293 /* TupleSequenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TupleSequenceViewController.h; sourceTree = "<group>"; };
+		DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TupleSequenceViewController.m; sourceTree = "<group>"; };
+		DB6D418C2276F1DC00E5F293 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		DB6D418D2276F1DC00E5F293 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DB7A90F3226709A800AFCE5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		DB7A90F4226709A800AFCE5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseViewController.h; sourceTree = "<group>"; };
@@ -157,6 +163,17 @@
 			path = "RAC核心方法";
 			sourceTree = "<group>";
 		};
+		DB6D41882276E45C00E5F293 /* 集合RACTuple与RACSequence */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D41892276E48F00E5F293 /* TupleSequenceViewController.h */,
+				DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */,
+				DB6D418C2276F1DC00E5F293 /* Person.h */,
+				DB6D418D2276F1DC00E5F293 /* Person.m */,
+			);
+			path = "集合RACTuple与RACSequence";
+			sourceTree = "<group>";
+		};
 		DB7A90EA2267058C00AFCE5E /* BaseUseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,11 +214,12 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
-				DB6D41842276DE9400E5F293 /* RAC核心方法 */,
+				DB6D41882276E45C00E5F293 /* 集合RACTuple与RACSequence */,
 				DB7A90EA2267058C00AFCE5E /* BaseUseVC */,
 				DB6D417822768F2D00E5F293 /* 定时器 */,
 				DB6D417C2276945500E5F293 /* RACMulticastConnection */,
 				DB6D41802276C7FA00E5F293 /* RACCommand */,
+				DB6D41842276DE9400E5F293 /* RAC核心方法 */,
 				DBEA0E292264807900EAEF8F /* Model */,
 				DBEA0DFD22647E4100EAEF8F /* Main.storyboard */,
 				DBEA0E0022647E4200EAEF8F /* Assets.xcassets */,
@@ -393,9 +411,11 @@
 			files = (
 				DB6D41832276C81800E5F293 /* CommandViewController.m in Sources */,
 				DBEA0DFC22647E4100EAEF8F /* ViewController.m in Sources */,
+				DB6D418B2276E48F00E5F293 /* TupleSequenceViewController.m in Sources */,
 				DBEA0E0722647E4200EAEF8F /* main.m in Sources */,
 				DB6D417B22768F5E00E5F293 /* TimerViewController.m in Sources */,
 				DB6D417F2276949300E5F293 /* MulticastConnectionViewController.m in Sources */,
+				DB6D418E2276F1DC00E5F293 /* Person.m in Sources */,
 				DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */,
 				DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */,
 				DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */,

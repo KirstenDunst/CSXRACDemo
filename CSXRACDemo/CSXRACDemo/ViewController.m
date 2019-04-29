@@ -13,6 +13,7 @@
 #import "MulticastConnectionViewController.h"
 #import "CommandViewController.h"
 #import "CenterViewController.h"
+#import "TupleSequenceViewController.h"
 
 @interface ViewController ()
 @end
@@ -54,7 +55,11 @@
     btn5.frame = CGRectMake(0, 430, 200, 50);
     [btn5 addTarget:self action:@selector(btn5Choose:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn5];
-    
+    UIButton *btn6 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn6 setTitle:@"Tuple" forState:UIControlStateNormal];
+    btn6.frame = CGRectMake(0, 490, 200, 50);
+    [btn6 addTarget:self action:@selector(btn6Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn6];
 }
 
 - (void)btnChoose:(UIButton *)sender {
@@ -78,5 +83,8 @@
 }
 - (void)btn5Choose:(UIButton *)sender {
     [self.navigationController pushViewController:[CenterViewController new] animated:YES];
+}
+- (void)btn6Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[TupleSequenceViewController new] animated:YES];
 }
 @end
