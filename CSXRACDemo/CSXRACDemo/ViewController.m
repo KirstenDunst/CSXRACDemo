@@ -12,6 +12,7 @@
 #import "TimerViewController.h"
 #import "MulticastConnectionViewController.h"
 #import "CommandViewController.h"
+#import "CenterViewController.h"
 
 @interface ViewController ()
 @end
@@ -48,6 +49,11 @@
     btn4.frame = CGRectMake(0, 370, 200, 50);
     [btn4 addTarget:self action:@selector(btn4Choose:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn4];
+    UIButton *btn5 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn5 setTitle:@"bind" forState:UIControlStateNormal];
+    btn5.frame = CGRectMake(0, 430, 200, 50);
+    [btn5 addTarget:self action:@selector(btn5Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn5];
     
 }
 
@@ -69,5 +75,8 @@
 }
 - (void)btn4Choose:(UIButton *)sender {
     [self.navigationController pushViewController:[CommandViewController new] animated:YES];
+}
+- (void)btn5Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[CenterViewController new] animated:YES];
 }
 @end
