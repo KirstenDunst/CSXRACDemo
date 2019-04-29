@@ -15,6 +15,7 @@
 		DB6D418B2276E48F00E5F293 /* TupleSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */; };
 		DB6D418E2276F1DC00E5F293 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418D2276F1DC00E5F293 /* Person.m */; };
 		DB6D41922277035800E5F293 /* LeftSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41912277035800E5F293 /* LeftSelectorViewController.m */; };
+		DB6D41962277347B00E5F293 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41952277347B00E5F293 /* MapViewController.m */; };
 		DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F4226709A800AFCE5E /* BaseView.m */; };
 		DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
@@ -62,6 +63,8 @@
 		DB6D418D2276F1DC00E5F293 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		DB6D41902277035800E5F293 /* LeftSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSelectorViewController.h; sourceTree = "<group>"; };
 		DB6D41912277035800E5F293 /* LeftSelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSelectorViewController.m; sourceTree = "<group>"; };
+		DB6D41942277347B00E5F293 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DB6D41952277347B00E5F293 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		DB7A90F3226709A800AFCE5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		DB7A90F4226709A800AFCE5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseViewController.h; sourceTree = "<group>"; };
@@ -186,6 +189,15 @@
 			path = rac_liftSelector;
 			sourceTree = "<group>";
 		};
+		DB6D41932277344E00E5F293 /* 映射 */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D41942277347B00E5F293 /* MapViewController.h */,
+				DB6D41952277347B00E5F293 /* MapViewController.m */,
+			);
+			path = "映射";
+			sourceTree = "<group>";
+		};
 		DB7A90EA2267058C00AFCE5E /* BaseUseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,14 +238,15 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
-				DB6D418F2277033300E5F293 /* rac_liftSelector */,
-				DB6D41882276E45C00E5F293 /* 集合RACTuple与RACSequence */,
+				DB6D41932277344E00E5F293 /* 映射 */,
+				DBEA0E292264807900EAEF8F /* Model */,
 				DB7A90EA2267058C00AFCE5E /* BaseUseVC */,
 				DB6D417822768F2D00E5F293 /* 定时器 */,
 				DB6D417C2276945500E5F293 /* RACMulticastConnection */,
 				DB6D41802276C7FA00E5F293 /* RACCommand */,
 				DB6D41842276DE9400E5F293 /* RAC核心方法 */,
-				DBEA0E292264807900EAEF8F /* Model */,
+				DB6D41882276E45C00E5F293 /* 集合RACTuple与RACSequence */,
+				DB6D418F2277033300E5F293 /* rac_liftSelector */,
 				DBEA0DFD22647E4100EAEF8F /* Main.storyboard */,
 				DBEA0E0022647E4200EAEF8F /* Assets.xcassets */,
 				DBEA0E0222647E4200EAEF8F /* LaunchScreen.storyboard */,
@@ -435,6 +448,7 @@
 				DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */,
 				DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */,
 				DB6D41872276DEC800E5F293 /* CenterViewController.m in Sources */,
+				DB6D41962277347B00E5F293 /* MapViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

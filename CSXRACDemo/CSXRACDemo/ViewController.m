@@ -15,6 +15,7 @@
 #import "CenterViewController.h"
 #import "TupleSequenceViewController.h"
 #import "LeftSelectorViewController.h"
+#import "MapViewController.h"
 
 @interface ViewController ()
 @end
@@ -66,6 +67,11 @@
     btn7.frame = CGRectMake(0, 550, 200, 50);
     [btn7 addTarget:self action:@selector(btn7Choose:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn7];
+    UIButton *btn8 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn8 setTitle:@"Map映射" forState:UIControlStateNormal];
+    btn8.frame = CGRectMake(0, 610, 200, 50);
+    [btn8 addTarget:self action:@selector(btn8Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn8];
 }
 
 - (void)btnChoose:(UIButton *)sender {
@@ -95,5 +101,8 @@
 }
 - (void)btn7Choose:(UIButton *)sender {
     [self.navigationController pushViewController:[LeftSelectorViewController new] animated:YES];
+}
+- (void)btn8Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[MapViewController new] animated:YES];
 }
 @end
