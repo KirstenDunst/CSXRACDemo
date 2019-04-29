@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		099297D1A59CE83DEFB439D7 /* libPods-CSXRACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */; };
+		DB6D417B22768F5E00E5F293 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D417A22768F5E00E5F293 /* TimerViewController.m */; };
+		DB6D417F2276949300E5F293 /* MulticastConnectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D417E2276949300E5F293 /* MulticastConnectionViewController.m */; };
+		DB6D41832276C81800E5F293 /* CommandViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41822276C81800E5F293 /* CommandViewController.m */; };
 		DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F4226709A800AFCE5E /* BaseView.m */; };
 		DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
@@ -41,6 +44,12 @@
 /* Begin PBXFileReference section */
 		3A87719ED21B3B81C6E5BB20 /* Pods-CSXRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSXRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSXRACDemo/Pods-CSXRACDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSXRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB6D417922768F5E00E5F293 /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		DB6D417A22768F5E00E5F293 /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		DB6D417D2276949300E5F293 /* MulticastConnectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulticastConnectionViewController.h; sourceTree = "<group>"; };
+		DB6D417E2276949300E5F293 /* MulticastConnectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MulticastConnectionViewController.m; sourceTree = "<group>"; };
+		DB6D41812276C81800E5F293 /* CommandViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommandViewController.h; sourceTree = "<group>"; };
+		DB6D41822276C81800E5F293 /* CommandViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommandViewController.m; sourceTree = "<group>"; };
 		DB7A90F3226709A800AFCE5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		DB7A90F4226709A800AFCE5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseViewController.h; sourceTree = "<group>"; };
@@ -109,6 +118,33 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB6D417822768F2D00E5F293 /* 定时器 */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D417922768F5E00E5F293 /* TimerViewController.h */,
+				DB6D417A22768F5E00E5F293 /* TimerViewController.m */,
+			);
+			path = "定时器";
+			sourceTree = "<group>";
+		};
+		DB6D417C2276945500E5F293 /* RACMulticastConnection */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D417D2276949300E5F293 /* MulticastConnectionViewController.h */,
+				DB6D417E2276949300E5F293 /* MulticastConnectionViewController.m */,
+			);
+			path = RACMulticastConnection;
+			sourceTree = "<group>";
+		};
+		DB6D41802276C7FA00E5F293 /* RACCommand */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D41812276C81800E5F293 /* CommandViewController.h */,
+				DB6D41822276C81800E5F293 /* CommandViewController.m */,
+			);
+			path = RACCommand;
+			sourceTree = "<group>";
+		};
 		DB7A90EA2267058C00AFCE5E /* BaseUseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,7 +185,10 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
+				DB6D41802276C7FA00E5F293 /* RACCommand */,
 				DB7A90EA2267058C00AFCE5E /* BaseUseVC */,
+				DB6D417822768F2D00E5F293 /* 定时器 */,
+				DB6D417C2276945500E5F293 /* RACMulticastConnection */,
 				DBEA0E292264807900EAEF8F /* Model */,
 				DBEA0DFD22647E4100EAEF8F /* Main.storyboard */,
 				DBEA0E0022647E4200EAEF8F /* Assets.xcassets */,
@@ -339,8 +378,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB6D41832276C81800E5F293 /* CommandViewController.m in Sources */,
 				DBEA0DFC22647E4100EAEF8F /* ViewController.m in Sources */,
 				DBEA0E0722647E4200EAEF8F /* main.m in Sources */,
+				DB6D417B22768F5E00E5F293 /* TimerViewController.m in Sources */,
+				DB6D417F2276949300E5F293 /* MulticastConnectionViewController.m in Sources */,
 				DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */,
 				DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */,
 				DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */,
