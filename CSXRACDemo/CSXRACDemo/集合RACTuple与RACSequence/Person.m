@@ -11,7 +11,20 @@
 @implementation Person
 
 + (instancetype)personWithDict:(NSDictionary *)tempDic {
+    return [[self alloc]initWithDictionary:tempDic];
+}
+
+- (instancetype)initWithDict:(NSDictionary *)tempDic {
+    self = [super init];
+    if (self) {
+        [self setValuesForKeysWithDictionary:tempDic];
+    }
+    return self;
+}
+
+- (void)setValue:(id)value forUndefinedKey:(NSString *)key {
     
 }
+
 
 @end

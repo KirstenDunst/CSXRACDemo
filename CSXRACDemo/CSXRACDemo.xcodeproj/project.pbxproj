@@ -14,6 +14,7 @@
 		DB6D41872276DEC800E5F293 /* CenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41862276DEC800E5F293 /* CenterViewController.m */; };
 		DB6D418B2276E48F00E5F293 /* TupleSequenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */; };
 		DB6D418E2276F1DC00E5F293 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D418D2276F1DC00E5F293 /* Person.m */; };
+		DB6D41922277035800E5F293 /* LeftSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB6D41912277035800E5F293 /* LeftSelectorViewController.m */; };
 		DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F4226709A800AFCE5E /* BaseView.m */; };
 		DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
@@ -59,6 +60,8 @@
 		DB6D418A2276E48F00E5F293 /* TupleSequenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TupleSequenceViewController.m; sourceTree = "<group>"; };
 		DB6D418C2276F1DC00E5F293 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		DB6D418D2276F1DC00E5F293 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		DB6D41902277035800E5F293 /* LeftSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeftSelectorViewController.h; sourceTree = "<group>"; };
+		DB6D41912277035800E5F293 /* LeftSelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeftSelectorViewController.m; sourceTree = "<group>"; };
 		DB7A90F3226709A800AFCE5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
 		DB7A90F4226709A800AFCE5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseViewController.h; sourceTree = "<group>"; };
@@ -174,6 +177,15 @@
 			path = "集合RACTuple与RACSequence";
 			sourceTree = "<group>";
 		};
+		DB6D418F2277033300E5F293 /* rac_liftSelector */ = {
+			isa = PBXGroup;
+			children = (
+				DB6D41902277035800E5F293 /* LeftSelectorViewController.h */,
+				DB6D41912277035800E5F293 /* LeftSelectorViewController.m */,
+			);
+			path = rac_liftSelector;
+			sourceTree = "<group>";
+		};
 		DB7A90EA2267058C00AFCE5E /* BaseUseVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +226,7 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
+				DB6D418F2277033300E5F293 /* rac_liftSelector */,
 				DB6D41882276E45C00E5F293 /* 集合RACTuple与RACSequence */,
 				DB7A90EA2267058C00AFCE5E /* BaseUseVC */,
 				DB6D417822768F2D00E5F293 /* 定时器 */,
@@ -417,6 +430,7 @@
 				DB6D417F2276949300E5F293 /* MulticastConnectionViewController.m in Sources */,
 				DB6D418E2276F1DC00E5F293 /* Person.m in Sources */,
 				DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */,
+				DB6D41922277035800E5F293 /* LeftSelectorViewController.m in Sources */,
 				DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */,
 				DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */,
 				DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */,

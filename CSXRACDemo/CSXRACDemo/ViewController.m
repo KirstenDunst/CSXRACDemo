@@ -14,6 +14,7 @@
 #import "CommandViewController.h"
 #import "CenterViewController.h"
 #import "TupleSequenceViewController.h"
+#import "LeftSelectorViewController.h"
 
 @interface ViewController ()
 @end
@@ -60,6 +61,11 @@
     btn6.frame = CGRectMake(0, 490, 200, 50);
     [btn6 addTarget:self action:@selector(btn6Choose:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn6];
+    UIButton *btn7 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn7 setTitle:@"rac_liftSelector" forState:UIControlStateNormal];
+    btn7.frame = CGRectMake(0, 550, 200, 50);
+    [btn7 addTarget:self action:@selector(btn7Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn7];
 }
 
 - (void)btnChoose:(UIButton *)sender {
@@ -86,5 +92,8 @@
 }
 - (void)btn6Choose:(UIButton *)sender {
     [self.navigationController pushViewController:[TupleSequenceViewController new] animated:YES];
+}
+- (void)btn7Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[LeftSelectorViewController new] animated:YES];
 }
 @end
