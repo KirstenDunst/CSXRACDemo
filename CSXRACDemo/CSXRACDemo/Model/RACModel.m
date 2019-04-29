@@ -105,8 +105,13 @@
 }
 
 //RACReplaySubject
+//RACReplaySubject，他继承RACSubject，他的目的就是为例解决上面必须先订阅后发送的问题。
 + (void)RACReplaySubjectDeal {
-    
+    RACReplaySubject *replaySubject = [RACReplaySubject subject];
+    [replaySubject sendNext:@"发送数据"];
+    [replaySubject subscribeNext:^(id  _Nullable x) {
+        NSLog(@"RACReplaySubject订阅的接受结果====%@",x);
+    }];
 }
 
 @end

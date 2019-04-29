@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		099297D1A59CE83DEFB439D7 /* libPods-CSXRACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */; };
+		DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F4226709A800AFCE5E /* BaseView.m */; };
+		DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */; };
 		DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DF822647E4100EAEF8F /* AppDelegate.m */; };
 		DBEA0DFC22647E4100EAEF8F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEA0DFB22647E4100EAEF8F /* ViewController.m */; };
 		DBEA0DFF22647E4100EAEF8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBEA0DFD22647E4100EAEF8F /* Main.storyboard */; };
@@ -39,6 +41,10 @@
 /* Begin PBXFileReference section */
 		3A87719ED21B3B81C6E5BB20 /* Pods-CSXRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSXRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CSXRACDemo/Pods-CSXRACDemo.release.xcconfig"; sourceTree = "<group>"; };
 		B8130F109A0727EEF5DD4EDA /* libPods-CSXRACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CSXRACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7A90F3226709A800AFCE5E /* BaseView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		DB7A90F4226709A800AFCE5E /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseUseViewController.h; sourceTree = "<group>"; };
+		DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseUseViewController.m; sourceTree = "<group>"; };
 		DBEA0DF422647E4100EAEF8F /* CSXRACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSXRACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBEA0DF722647E4100EAEF8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DBEA0DF822647E4100EAEF8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -103,6 +109,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		DB7A90EA2267058C00AFCE5E /* BaseUseVC */ = {
+			isa = PBXGroup;
+			children = (
+				DB7A90F622670C0400AFCE5E /* BaseUseViewController.h */,
+				DB7A90F722670C0400AFCE5E /* BaseUseViewController.m */,
+				DB7A90F3226709A800AFCE5E /* BaseView.h */,
+				DB7A90F4226709A800AFCE5E /* BaseView.m */,
+			);
+			path = BaseUseVC;
+			sourceTree = "<group>";
+		};
 		DBEA0DEB22647E4100EAEF8F = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +149,7 @@
 				DBEA0DF822647E4100EAEF8F /* AppDelegate.m */,
 				DBEA0DFA22647E4100EAEF8F /* ViewController.h */,
 				DBEA0DFB22647E4100EAEF8F /* ViewController.m */,
+				DB7A90EA2267058C00AFCE5E /* BaseUseVC */,
 				DBEA0E292264807900EAEF8F /* Model */,
 				DBEA0DFD22647E4100EAEF8F /* Main.storyboard */,
 				DBEA0E0022647E4200EAEF8F /* Assets.xcassets */,
@@ -325,6 +343,8 @@
 				DBEA0E0722647E4200EAEF8F /* main.m in Sources */,
 				DBEA0DF922647E4100EAEF8F /* AppDelegate.m in Sources */,
 				DBEA0E2C2264808F00EAEF8F /* RACModel.m in Sources */,
+				DB7A90F5226709A800AFCE5E /* BaseView.m in Sources */,
+				DB7A90F822670C0400AFCE5E /* BaseUseViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
