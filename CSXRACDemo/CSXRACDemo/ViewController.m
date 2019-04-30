@@ -16,6 +16,8 @@
 #import "TupleSequenceViewController.h"
 #import "LeftSelectorViewController.h"
 #import "MapViewController.h"
+#import "FilterViewController.h"
+#import "LoginViewController.h"
 
 @interface ViewController ()
 @end
@@ -72,6 +74,16 @@
     btn8.frame = CGRectMake(0, 610, 200, 50);
     [btn8 addTarget:self action:@selector(btn8Choose:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn8];
+    UIButton *btn9 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn9 setTitle:@"过滤" forState:UIControlStateNormal];
+    btn9.frame = CGRectMake(0, 670, 200, 50);
+    [btn9 addTarget:self action:@selector(btn9Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn9];
+    UIButton *btn10 = [UIButton buttonWithType:UIButtonTypeSystem];
+    [btn10 setTitle:@"登陆页面MVVM" forState:UIControlStateNormal];
+    btn10.frame = CGRectMake(0, 730, 200, 50);
+    [btn10 addTarget:self action:@selector(btn10Choose:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn10];
 }
 
 - (void)btnChoose:(UIButton *)sender {
@@ -104,5 +116,11 @@
 }
 - (void)btn8Choose:(UIButton *)sender {
     [self.navigationController pushViewController:[MapViewController new] animated:YES];
+}
+- (void)btn9Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[FilterViewController new] animated:YES];
+}
+- (void)btn10Choose:(UIButton *)sender {
+    [self.navigationController pushViewController:[LoginViewController new] animated:YES];
 }
 @end
